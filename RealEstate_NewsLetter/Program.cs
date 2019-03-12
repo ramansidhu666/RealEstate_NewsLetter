@@ -41,6 +41,25 @@ namespace RealEstate_NewsLetter
             dbname = "Rohit_conn";
             Execute_NewsLetter(Rohit_conn);
 
+
+            SqlConnection Raja_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Raja_conn"].ConnectionString.ToString());
+            EMailAddress = "dontreply081@gmail.com";
+            EmailPassword = "!nd!@123";
+            dbname = "Raja_conn";
+            Execute_NewsLetter(Raja_conn);
+
+            SqlConnection Bobby_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Bobby_conn"].ConnectionString.ToString());
+            EMailAddress = "homefinderingta@gmail.com";
+            EmailPassword = "Website@2019";
+            dbname = "Bobby_conn";
+            Execute_NewsLetter(Bobby_conn);
+
+            SqlConnection Mitesh_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Mitesh_conn"].ConnectionString.ToString());
+            EMailAddress = "miteshtrivedi777@gmail.com";
+            EmailPassword = "CoMputer66";
+            dbname = "Mitesh_conn";
+            Execute_NewsLetter(Mitesh_conn);
+
             SqlConnection Fara_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Fara_conn"].ConnectionString.ToString());
             EMailAddress = "dontreply081@gmail.com";
             EmailPassword = "!nd!@123";
@@ -797,7 +816,7 @@ namespace RealEstate_NewsLetter
                 mail.From = new MailAddress(FromEmailID);
                 mail.Subject = "NewsLetter";
                 string msgbody = "";
-                if(dbname== "Parag_Tandon_conn"||dbname== "Rajiv_Bakshi_conn"||dbname== "Team_Sidhu_conn" || dbname == "Dev_conn" || dbname == "Harvinder_Sohi_conn"
+                if (dbname == "Parag_Tandon_conn" || dbname == "Rajiv_Bakshi_conn" || dbname == "Team_Sidhu_conn" || dbname == "Dev_conn" || dbname == "Harvinder_Sohi_conn"
                     || dbname == "Vipan_Jassal_conn"
                      || dbname == "AjayShah_conn"
                      || dbname == "Gunjan_Virk_conn"
@@ -807,18 +826,19 @@ namespace RealEstate_NewsLetter
                      || dbname == "Sheikh_Kashif_conn"
                      || dbname == "Seeya_Shah_conn"
                      || dbname == "Sudesh_conn"
-                     || dbname == "Manjit_Kundhal_conn" 
+                     || dbname == "Manjit_Kundhal_conn"
                      || dbname == "Dalip_conn"
-                     || dbname == "Satish_Patil_conn" 
-                     || dbname == "Rajguru_conn" 
-                    // || dbname == "Nikita_conn" 
-                    // || dbname == "Nikita_conn" 
-                    // || dbname == "Nikita_conn"
-                    || dbname == "Charanjit_conn"||dbname=="Nikita_conn"||dbname=="Farah_conn" ||dbname== "SatishSharma_conn"|| dbname== "Suchi_conn" || dbname == "Rashpal_conn" || dbname == "Suresh_conn" || dbname== "Rohit_conn" || dbname== "Harjit_conn"||dbname=="Ranbir_conn" || dbname == "Varinder_conn" || dbname == "Condo_conn" || dbname == "Sanjiv_conn" || dbname == "Praba_conn" || dbname == "Hetal_conn" || dbname == "Shveta_conn")
+                     || dbname == "Satish_Patil_conn"
+                     || dbname == "Rajguru_conn"
+                    || dbname == "Mitesh_conn"
+                       || dbname == "Bobby_conn"
+                     || dbname == "Raja_conn"
+                    
+                    || dbname == "Charanjit_conn" || dbname == "Nikita_conn" || dbname == "Farah_conn" || dbname == "SatishSharma_conn" || dbname == "Suchi_conn" || dbname == "Rashpal_conn" || dbname == "Suresh_conn" || dbname == "Rohit_conn" || dbname == "Harjit_conn" || dbname == "Ranbir_conn" || dbname == "Varinder_conn" || dbname == "Condo_conn" || dbname == "Sanjiv_conn" || dbname == "Praba_conn" || dbname == "Hetal_conn" || dbname == "Shveta_conn")
                 {
-                    string url =dbname+ "_LiveURL";
-                    FirstImg = ConfigurationManager.AppSettings[url].ToString()+"uploadfiles/" + FirstImg;
-                    SecondImg= ConfigurationManager.AppSettings[url].ToString() + "uploadfiles/" + SecondImg;
+                    string url = dbname + "_LiveURL";
+                    FirstImg = ConfigurationManager.AppSettings[url].ToString() + "uploadfiles/" + FirstImg;
+                    SecondImg = ConfigurationManager.AppSettings[url].ToString() + "uploadfiles/" + SecondImg;
                 }
                 if (dbname == "Parag_Tandon_conn")
                 {
