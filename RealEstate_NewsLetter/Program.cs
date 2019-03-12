@@ -123,6 +123,18 @@ namespace RealEstate_NewsLetter
             dbname = "Jay_Singh_conn";
             Execute_NewsLetter(Jay_Singh_conn);
 
+            SqlConnection Pankaj_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Pankaj_conn"].ConnectionString.ToString());
+            EMailAddress = "dontreply081@gmail.com";
+            EmailPassword = "!nd!@123";
+            dbname = "Pankaj_conn";
+            Execute_NewsLetter(Pankaj_conn);
+
+            SqlConnection TeamSinghKaur_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["TeamSinghKaur_conn"].ConnectionString.ToString());
+            EMailAddress = "agentsidhunews@gmail.com";
+            EmailPassword = "Kalagora";
+            dbname = "TeamSinghKaur_conn";
+            Execute_NewsLetter(TeamSinghKaur_conn);
+
             SqlConnection Gurmail_Kamboj_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Gurmail_Kamboj_conn"].ConnectionString.ToString());
             EMailAddress = "realtorgurmailkambojnews@gmail.com";
             EmailPassword = "Only4agents";
@@ -821,6 +833,8 @@ namespace RealEstate_NewsLetter
                      || dbname == "AjayShah_conn"
                      || dbname == "Gunjan_Virk_conn"
                      || dbname == "Jay_Singh_conn"
+                     ||dbname== "Pankaj_conn"
+                     ||dbname== "TeamSinghKaur_conn"
                      || dbname == "Gurmail_Kamboj_conn"
                      || dbname == "Shallu_Sharma_conn"
                      || dbname == "Sheikh_Kashif_conn"

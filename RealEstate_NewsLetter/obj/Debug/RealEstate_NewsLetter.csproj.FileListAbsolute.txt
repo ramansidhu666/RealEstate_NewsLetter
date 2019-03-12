@@ -10,9 +10,8 @@ C:\Sites\Paramsites\RealEstate_NewsLetter\RealEstate_NewsLetter\obj\Debug\RealEs
 C:\Sites\Paramsites\RealEstate_NewsLetter\RealEstate_NewsLetter\bin\Debug\RealEstate_NewsLetter.exe
 C:\Sites\Paramsites\RealEstate_NewsLetter\RealEstate_NewsLetter\bin\Debug\RealEstate_NewsLetter.pdb
 C:\Sites\Paramsites\RealEstate_NewsLetter\RealEstate_NewsLetter\obj\Debug\RealEstate_NewsLetter.csprojResolveAssemblyReference.cache
-C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\bin\Debug\RealEstate_NewsLetter.exe.config
 C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\bin\Debug\RealEstate_NewsLetter.exe
 C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\bin\Debug\RealEstate_NewsLetter.pdb
+C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\bin\Debug\RealEstate_NewsLetter.exe.config
 C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\obj\Debug\RealEstate_NewsLetter.exe
 C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\obj\Debug\RealEstate_NewsLetter.pdb
-C:\sites\RealEstate_NewsLetter\RealEstate_NewsLetter\obj\Debug\RealEstate_NewsLetter.csprojResolveAssemblyReference.cache
