@@ -135,6 +135,13 @@ namespace RealEstate_NewsLetter
             dbname = "TeamSinghKaur_conn";
             Execute_NewsLetter(TeamSinghKaur_conn);
 
+
+            SqlConnection Khalid_Ahmed_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Khalid_Ahmed_conn"].ConnectionString.ToString());
+            EMailAddress = "ka463868@gmail.com";
+            EmailPassword = "sarangi11";
+            dbname = "Khalid_Ahmed_conn";
+            Execute_NewsLetter(Khalid_Ahmed_conn);
+
             SqlConnection Gurmail_Kamboj_conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Gurmail_Kamboj_conn"].ConnectionString.ToString());
             EMailAddress = "realtorgurmailkambojnews@gmail.com";
             EmailPassword = "Only4agents";
@@ -833,7 +840,8 @@ namespace RealEstate_NewsLetter
                      || dbname == "AjayShah_conn"
                      || dbname == "Gunjan_Virk_conn"
                      || dbname == "Jay_Singh_conn"
-                     ||dbname== "Pankaj_conn"
+                     ||dbname== "Khalid_Ahmed_conn"
+                     || dbname== "Pankaj_conn"
                      ||dbname== "TeamSinghKaur_conn"
                      || dbname == "Gurmail_Kamboj_conn"
                      || dbname == "Shallu_Sharma_conn"
